@@ -10,8 +10,8 @@
                             <div class="col-md-8 col-sm-12 col-md-offset-2 col-xs-12 col-md-pull-1 slider-text">
                                 <div class="slider-text-inner">
                                     <div class="desc">
-                                        <h2>You only have to know one thing</h2>
-                                        <h1>Best Online Learning System</h1>
+                                        <h2>Welcome to Qwasel</h2>
+                                        <h1>We connect people with their interests</h1>
                                         <p><a href="https://vimeo.com/channels/staffpicks/93951774" class="btn btn-primary btn-lg popup-vimeo"><span class="icon"><i class="icon-play3"></i></span> Start Learning Now!</a></p>
                                     </div>
                                 </div>

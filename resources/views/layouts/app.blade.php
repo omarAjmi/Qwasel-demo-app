@@ -1,11 +1,11 @@
 <!doctype html>
 <html style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
     <head>
-        <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+        <meta charset="UTF-8">
 
-        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Knowledge Template</title>
+        <title>Qwasel || We connect people with their interests</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -23,8 +23,12 @@
         <meta name="twitter:card" content="">
     
         <link href="/fonts/css6043.css?family=Rubik:300,400,500,700,900" rel="stylesheet">
-    
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
         <!-- Animate.css -->
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+
         <link rel="stylesheet" href="/css/animate.css">
         <!-- Icomoon Icon Fonts-->
         <link rel="stylesheet" href="/css/icomoon.css">
@@ -42,7 +46,7 @@
         <link rel="stylesheet" href="/css/owl.theme.default.min.css">
     
         <!-- Flaticons  -->
-        <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="/fonts/flaticon/font/flaticon.css">
     
         <!-- Theme style  -->
         <link rel="stylesheet" href="/css/style.css">
@@ -83,8 +87,10 @@
                     <li class="btn-cta"><a href="#"><span>Get started</span></a></li>
                 </ul>
             </div>
-            <nav class="colorlib-nav" role="navigation">
-                <div class="upper-menu">
+            <nav class="colorlib-nav" role="navigation" style="position: fixed;
+    top: 0px;
+    width: 100%;">
+                {{--<div class="upper-menu">
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-4">
@@ -95,20 +101,22 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="top-menu">
+                </div>--}}
+                <div class="upper-menu">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-2">
-                                <div id="colorlib-logo"><a href="index.html">Knowledge</a></div>
+                                <div id="colorlib-logo"><a href="{{ route('welcome') }}">
+                                        <img style="" src="{{ route('welcome') }}/images/logo2.png" alt="Qwasel كيو وصل Logo">
+                                    </a></div>
                             </div>
                             <div class="col-md-10 text-right menu-1">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active"><a href="index.html"> Home</a></li>
                                     <li class="has-dropdown">
                                         <a href="{{ route('workshops') }}">Workshops</a>
                                         <ul class="dropdown">
-                                            <li><a href="courses-single.html">Courses Single</a></li>
+                                            <li><a href="{{ route('workshops.single') }}">Single Workshop</a></li>
                                             <li><a href="#">Mobile Apps</a></li>
                                             <li><a href="#">Website</a></li>
                                             <li><a href="#">Web Design</a></li>
@@ -116,9 +124,9 @@
                                         </ul>
                                     </li>
                                     <li><a href="{{ route('trainers') }}">Trainers</a></li>
-                                    <li class="active"><a href="about.html">About</a></li>
+                                    <li><a href="about.html">Training centers</a></li>
                                     <li><a href="event.html">Events</a></li>
-                                    <li><a href="news.html">News</a></li>
+                                    <li><a href="news.html">Blog</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                     <li class="btn-cta"><a href="#"><span>Get started</span></a></li>
                                 </ul>
@@ -130,7 +138,7 @@
 
             @yield('content')
 
-            <div id="colorlib-subscribe" class="subs-img" style="background-image: url(&quot;/images/img_bg_2.jpg&quot;); background-position: 50% 3252.19px;" data-stellar-background-ratio="0.5">
+            <div id="colorlib-subscribe" class="subs-img" style="background-image: url('{{ route('welcome') }}/images/img_bg_1.jpg'); background-position: 50% 3252.19px;" data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row">
@@ -217,7 +225,7 @@
                         <div class="col-md-3 colorlib-widget">
                             <h4>Recent Post</h4>
                             <div class="f-blog">
-                                <a href="blog.html" class="blog-img" style="background-image: url(/images/blog-1.jpg);">
+                                <a href="blog.html" class="blog-img" style="background-image: url({{ route('welcome') }}/images/blog-1.jpg);">
                                 </a>
                                 <div class="desc">
                                     <h2><a href="blog.html">Creating Mobile Apps</a></h2>
@@ -225,7 +233,7 @@
                                 </div>
                             </div>
                             <div class="f-blog">
-                                <a href="blog.html" class="blog-img" style="background-image: url(/images/blog-2.jpg);">
+                                <a href="blog.html" class="blog-img" style="background-image: url({{ route('welcome') }}/images/blog-2.jpg);">
                                 </a>
                                 <div class="desc">
                                     <h2><a href="blog.html">Creating Mobile Apps</a></h2>

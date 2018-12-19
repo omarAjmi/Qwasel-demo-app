@@ -90,7 +90,7 @@
                             <h3>Olivia Young</h3>
                             <span>instructor</span>
                         </div>
-                        <div class="trainer-img" style="background-image: url(/images/person1.jpg)"></div>
+                        <div class="trainer-img" style="background-image: url({{ route('welcome') }}/images/person1.jpg)"></div>
                     </div>
                 </div>
 
@@ -100,7 +100,7 @@
                             <h3>Daniel Anderson</h3>
                             <span>Instructor</span>
                         </div>
-                        <div class="trainer-img" style="background-image: url(/images/person2.jpg)"></div>
+                        <div class="trainer-img" style="background-image: url({{ route('welcome') }}/images/person2.jpg)"></div>
                     </div>
                 </div>
 
@@ -110,7 +110,7 @@
                             <h3>David Brook</h3>
                             <span>Instructor</span>
                         </div>
-                        <div class="trainer-img" style="background-image: url(/images/person3.jpg)"></div>
+                        <div class="trainer-img" style="background-image: url({{ route('welcome') }}/images/person3.jpg)"></div>
                     </div>
                 </div>
 
@@ -120,7 +120,51 @@
                             <h3>Brigeth Smith</h3>
                             <span>instructor</span>
                         </div>
-                        <div class="trainer-img" style="background-image: url(/images/person4.jpg)"></div>
+                        <div class="trainer-img" style="background-image: url({{ route('welcome') }}/images/person4.jpg)"></div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 col-sm-3 animate-box">
+                    <div class="trainers-entry">
+                        <div class="desc">
+                            <h3>Brigeth Smith</h3>
+                            <span>instructor</span>
+                        </div>
+                        <div class="trainer-img" style="background-image: url({{ route('welcome') }}/images/person4.jpg)"></div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 col-sm-3 animate-box">
+                    <div class="trainers-entry">
+                        <div class="desc">
+                            <h3>Brigeth Smith</h3>
+                            <span>instructor</span>
+                        </div>
+                        <div class="trainer-img" style="background-image: url({{ route('welcome') }}/images/person3.jpg)"></div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 col-sm-3 animate-box">
+                    <div class="trainers-entry">
+                        <div class="desc">
+                            <h3>Brigeth Smith</h3>
+                            <span>instructor</span>
+                        </div>
+                        <div class="trainer-img" style="background-image: url({{ route('welcome') }}/images/person2.jpg)"></div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 col-sm-3 animate-box">
+                    <div class="trainers-entry">
+                        <div class="desc">
+                            <h3>Brigeth Smith</h3>
+                            <span>instructor</span>
+                        </div>
+                        <div class="trainer-img" style="background-image: url({{ route('welcome') }}/images/person1.jpg)"></div>
                     </div>
                 </div>
             </div>

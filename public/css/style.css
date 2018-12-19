@@ -831,7 +831,7 @@ h1, h2, h3, h4, h5, h6, figure {
     box-shadow: 0px 23px 61px -34px rgba(0, 0, 0, 0.21); }
 
 .desc2 {
-  padding-top: 2em; }
+  padding-top:3em; }
   .desc2 h3 {
     font-size: 30px !important; }
 
@@ -1789,3 +1789,33 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0; }
+
+/*.popout {
+    animation: popout 1s ease;
+    -webkit-animation: popout 1s ease;
+}
+@keyframes popout {
+    from{transform:scale(0)}
+    80%{transform:scale(1.2)}
+    to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(0)}
+    80%{-webkit-transform:scale(1.2)}
+    to{-webkit-transform:scale(1)}
+}*/
+
+.popout:hover {
+    animation: popout 2s ease;
+    -webkit-animation: popout 2s ease;
+}
+@keyframes popout {
+    from{transform:scale(1)}
+    /*80%{transform:scale(0.8)}*/
+    to{transform:scale(0.8)}
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(1)}
+    /*80%{-webkit-transform:scale(0.8)}*/
+    to{-webkit-transform:scale(0.8)}
+}
